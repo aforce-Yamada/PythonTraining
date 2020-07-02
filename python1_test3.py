@@ -6,7 +6,7 @@ weight = float(input())
 bmi = weight / height ** 2
 print(bmi)
 
-message = "message"
+message = ""
 
 if bmi < 18.5:
     message = "やせ"
@@ -18,4 +18,4 @@ else:
     message = "高度肥満"
 
 print("＜実行結果＞")
-print("あなたは「" + str(message) + "」です。")
+print("あなたは" + message + "です。")
