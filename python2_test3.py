@@ -9,11 +9,11 @@ def aspect_ratio(ox,oy):
     return (ox/x, oy/x)
 
 
-def size(img):
+def print_img_size(img):
     width, height = img.size
     print('横:', width)
     print('縦:', height)
     print('アスペクト比:',aspect_ratio(width,height))
     
 
-size(qrcode.make("http://a-force.biz"))
+print_img_size(qrcode.make("http://a-force.biz"))
